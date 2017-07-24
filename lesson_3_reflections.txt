@@ -1,0 +1,17 @@
+point 1 :
+When you initialize the repository,git doesn't create any commits.That's to say,when we create a reponsitory,the 
+number of commits is 0!!
+
+point 2:
+
+when you create a new repository,cause there is 0 commit.
+So you can't use [git log] to track.
+Here,[git status] is useful.It shows which files have changed since the last commit.
+
+Point 3:
+new concepts:  repository, working directory,staging area
+in our working directory:there are some files
+use[git init]: we create a empty repository,with no commit
+use[git add]: we add some of our files into the staging 
+area,the rest files are still leave in our working directory without tracking by git.
+
