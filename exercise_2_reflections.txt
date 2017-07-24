@@ -1,0 +1,16 @@
+作业题总结：
+1.当保存一个新的commit时，Git不会将文件重命名，而是通过commit ID来识别文件不同的版本。
+我们可以通过git checkout 来暂时回到以前的版本。
+
+2.git clone和普通的copy的异同
+如果对方给了你目录（directory）或者是代码库的URL，那么git clone 和 命令为：scp（secure copy )都可以
+实现从一台电脑到另一台电脑的文件移植。
+
+并且对移植后的文件的操作都不会影响原电脑中文件的状态。
+
+一个巨大的差异是：
+git clone 会同时搬移其历史的代码更改信息。
+
+3.git checkout
+
+ each commit tracks the state of all files in the repository
