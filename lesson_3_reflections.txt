@@ -15,3 +15,39 @@ use[git init]: we create a empty repository,with no commit
 use[git add]: we add some of our files into the staging 
 area,the rest files are still leave in our working directory without tracking by git.
 
+Point 4:
+
+how to modify files in working directory and then commit them to correct bugs?
+
+if I modified some files in my working directory
+use [git diff] with no ids, it shows the differences between working directory & staging area.
+use [git diff --staged] to show the differences between
+staging area & the latest commit
+
+if i run [git reset --hard], i discards any changes in working directory and staging area.
+
+Point 5:  debug game.js in asteriod
+find the bug in game.js 
+correct the wrong line and save.
+[git add game.js]add changed game.js into staging area
+[git commit] to commit the new version of our code.
+
+Point 6: the idea of branch
+
+you can create different branches towards one project.
+For example,create a branch called [easy mode] for the 
+asteroids game. 
+
+[git branch easy-mode]: create the new branch
+[git checkout easy-mode]: on the easy-mode branch
+then we can make some change in the game.js
+[git add game.js] to staging area
+[git commit]: commit the new version.
+
+Point 7:
+head: means the current commit.
+
+log: error in merge!!!! do it tomorrow!!!
+
+2017.7.26：fix the error in merge!!
+git reset --hard commit-id : delete the commit after the commit-id
