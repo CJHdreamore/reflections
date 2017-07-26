@@ -49,5 +49,18 @@ head: means the current commit.
 
 log: error in merge!!!! do it tomorrow!!!
 
-2017.7.26：fix the error in merge!!
+2017.7.26：
+fix the error in merge!!
 git reset --hard commit-id : delete the commit after the commit-id
+
+branch is just a label refer to a commit.
+
+Conflicts when merging: 
+
+Git don't know how to merge when the code in two branches is simutaneously changed, that's why a conclict occurs.
+
+Then we should check the code and to find the differences.
+So we can decide the final change to the same code.
+
+After this, we can [git add xx.js] to our staging area
+Finally,[git commit] to the repository by solving the conflict.
